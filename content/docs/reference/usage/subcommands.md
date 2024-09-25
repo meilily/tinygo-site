@@ -8,8 +8,8 @@ description: |
 TinyGo tries to be similar to the main `go` command in usage. It consists of the following main subcommands:
 
 ### build
-Compile the given program. The output binary is specified using the ``-o``
-parameter. The generated file type depends on the extension:
+Build compiles the package named by the import path, along with its dependencies, but it does not install the result.
+The generated file type depends on the extension:
 
 `.o`
 Create a relocatable object file. You can use this option if you don't want to use the TinyGo build system or want to do other custom things.
